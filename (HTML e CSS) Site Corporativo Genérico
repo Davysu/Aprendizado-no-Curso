@@ -1,3 +1,5 @@
+<!--CÓDIGO EM HTML-->
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -154,3 +156,336 @@
 
 </body>
 </html>
+
+/*CÓDIGO EM CSS*/
+
+*{
+    margin:0;
+    padding:0;
+    font-family:Verdana,Geneva,Tahoma,sans-serif;
+}
+
+header{
+    height: 100px;
+    background:#000000;
+    padding: 0 50px;
+    color:rgb(246, 244, 248);
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.Logo{
+    text-transform: uppercase;
+    color:#f5f3f7;
+    font-weight: 200;
+    justify-content: space-between;
+}
+
+.menu a{
+    color: rgb(247, 245, 250);
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 0 10px;
+    transition: 0.4s;
+}
+
+.mostrar-menu, .esconder-menu{
+    font-size: 30px; /*aumenta o tamanho da fonte*/
+    cursor:pointer;/* deixa o cursor como uma mãozinha*/
+    display: none;
+    transition: 0.4s;
+    
+}
+
+.menu a:hover,
+.mostra-menu:hover,
+.esconder-menu:hover{
+    color:#ffffff;
+    animation: cor;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+#check{
+    display: none;
+}
+
+#banner{
+    padding:0 50px;
+    background-image:url(../img2/predios\ 2.jpg);
+    height: 45vh;
+    background-size:cover;
+    background-position:center;
+}
+
+#banner::before{
+    content: '';
+    background: rgba(77, 77, 92, 0.6);
+    position: absolute;
+    width: 100%;
+    height: 45vh;
+    left: 0;
+}
+
+.conteudo-banner{
+    position:relative;
+    color:#f8f8f8;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.conteudo-banner h3{
+    font-size: 30px;
+    font-weight: 400;
+    padding: 10px 0px;
+}
+
+.conteudo-banner h3 span{
+    font-weight: 600;
+    
+}
+
+.botao-iniciar{
+    text-decoration: none;
+    color: rgb(247, 247, 247);
+    border: 2px solid #020005;
+    padding: 20px 40px;
+    align-self: flex-end; /*essa propriedade não ocupará
+    toda a parte do conteúdo (também pode ser BASELINE)*/ 
+    transition: all 0.4s;
+    border-radius: 30px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.botao-iniciar:hover{
+    background: #020005;
+    animation: cor;
+    
+}
+
+/*pessoas*/
+
+#pessoas{
+    padding: 50px 50px;
+    display: flex; /*deixa lado a lado*/
+    justify-content: center;
+    text-align: center;
+    
+}
+
+#pessoas img{
+    border-radius: 100%;
+}
+
+#pessoas div{
+    padding: 30px 30px;
+}
+
+#pessoas div h4{
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    margin:15px 0px
+
+}
+
+#pessoas div p{
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+}
+
+.botao-saiba-mais{
+    display: inline-block;
+    text-decoration: none;
+    color: #060308;
+    padding: 10px 30px;
+    border: 1px solid #070607;
+    border-radius: 30px;
+    margin-top: 15px;
+    transition: all 0.4s;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.botao-saiba-mais:hover{
+    background: #060508;
+    color: #ffffff;
+    animation: cor;
+    
+}
+
+/*icons*/
+#icons{
+    padding: 0px 50px;
+    background: rgba(0, 0, 0, 0.384);
+    color: #ffffff;
+}
+.conteudos-icons{
+    padding: 50px 50px 0px 50px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.conteudos-icons div{
+    flex: 1;
+    margin: 10px 0px;
+    border-right: 2px solid rgb(255, 255, 255);
+
+}
+
+#icons-mobile{
+    border: none;
+
+}
+
+.conteudos-icons div i{
+    color: none;
+    animation: cor;
+}
+
+.conteudos-icons div h6{
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 100;
+    margin: 10px 0px;
+}
+
+.conteudos-icons div p{
+    color: #ffffff;
+    font-size: 15px;
+}
+
+.botao-icons{
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+/*formulário*/
+#contato{
+    background: rgba(0, 0, 0, 0.623);
+    padding: 50px 0px;
+    color: #ffffff;
+}
+
+#contato h4{
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+#contato form{
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.dados-form{
+    display: flex;
+}
+
+.dados-form div{
+    padding: 10px;
+    flex: 1;
+}
+
+form label{
+    display: block;
+    margin-bottom: 10px;
+}
+
+form input,
+form textarea{
+    background: #ffffff;
+    border-radius: 10px;
+    border: 2px solid #535353;
+    padding: 10px 5px;
+    outline: 0;
+    color: #ffffff;
+    width: 100%;
+}
+
+form input:focus,
+form textarea:focus{
+    border-color: rgb(7, 0, 0);
+    box-shadow: 0 0 0 1px #ffffff;
+}
+
+.mensagem{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+.botao-formulario .botao-saiba-mais{
+    display: block;
+    border: 1px solid  #ffffff;
+    text-align: center;
+    transition: 0.4s;
+}
+
+.botao-formulario .botao-saiba-mais:hover{
+    background: #2c2b2b;
+    
+}
+
+footer{
+    background: #2c2b2b;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0px;
+}
+
+
+
+
+
+
+
+
+@media(max-width: 768px){/*to phone*/
+    .mostrar-menu, .esconder-menu{
+        display:block;
+    }
+    .menu{
+        position:fixed;
+        width: 100%;
+        height: 100%;
+        background: #000000;
+        right: -100%;
+        top:0%;
+        text-align: center;
+        padding: 100px 0px;
+        z-index: 100;
+        transition: 1.0s;
+    }
+    .menu a{
+        display:block;
+        padding: 20px;
+    }
+    .esconder-menu{
+        position: absolute;
+        top: 40px;
+        right: 40px;
+    }
+    #check:checked~ .menu{
+        right: 0;
+    }
+    /*pessoas*/
+    #pessoas{
+        flex-direction: column;
+    }
+    /*icons*/
+    .conteudos-icons{
+        flex-direction: column;
+    }
+    .conteudos-icons div{
+        border: none;/*quando chegar ao tamanho de tablet ou celular,
+        as bordas desaparecerão*/
+    }
+
+/*formulário*/
+.dados-form{
+    flex-direction: column;
+}
+
+}/*fechamento 768px*/
