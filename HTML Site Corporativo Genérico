@@ -1,0 +1,148 @@
+<!--CÓDIGO EM HTML-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Corporativo Genérico</title>
+    <link rel="stylesheet" href="CSS/Site Genérico.css">
+    <script src="https://kit.fontawesome.com/0268ce440b.js"
+     crossorigin="anonymous"></script>
+<head>
+<body>
+    <header>
+        <em><h2 class="Logo">
+        Corporative </h2></em>
+        <input type="checkbox" id="check">
+        <label for="check" class="mostrar-menu">&#8801 </label>
+    
+    <nav class="menu">
+        <a href="#">
+            Inicio
+        </a>
+        <a href="#">
+            Quem Somos
+        </a>
+        <a href="#">
+            Blog
+        </a>
+        <label for="check" class="esconder-menu">
+            &#215</label>
+        
+    </nav>
+</header>
+<section id="banner">
+    <div class="conteudo-banner">
+        <h3>
+            <span>
+                Corporative: Design Web Responsive
+            </span>
+             <br> Mobile Friendly
+        </h3>
+        <a href="#" class="botao-iniciar">
+            INICIAR
+        </a>
+        
+    </div>
+</section>
+<section id="pessoas">
+    <div>
+        <img src="img2/Homem.png" alt="image"height="240" width="239">
+        <h4>
+           Lorem Ipsum 
+        </h4>
+        <p>
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, delectus nobis. Consectetur fuga quos rerum. Doloribus quia quas dolorum quo quaerat maxime voluptas molestias, nulla expedita exercitationem tempore a hic.<br> <br>
+        </p>
+        <a href="#"class="botao-saiba-mais">
+            Saiba Mais
+        </a>
+    </div><!--Icone Homem-->
+    <div>
+         <img src="img2/Mulher.png" alt="image"height="240" width="239">
+        <h4>
+           Lorem Ipsum
+        </h4>
+        <p>
+       Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum, amet, aperiam dolorum repellat voluptatem eius minima eos modi consequatur qui expedita optio, quae vero enim odio blanditiis dolorem. Quibusdam, sequi. <br> <br>
+        </p>
+        <a href="#"class="botao-saiba-mais">
+            Saiba Mais
+        </a>
+    </div><!--Icone Mulher-->
+</section>
+<section id="icons">
+    <div class="conteudos-icons">
+        <div>
+            <i class="fas fa-shipping-fast fa-3x"></i>
+            <h6>
+                Fast
+            </h6>
+            <p>Rápida Resposta</p>
+        </div><!--Responsividade-->
+            <div>
+                <i class="fab fa-accessible-icon fa-3x"></i>
+                <h6>
+                    Acessibilidade
+                </h6>
+                <p>Para Todos</p>
+            </div><!--Acessible-->
+            <div id="icons-mobile">
+                <i class="fas fa-mobile-alt fa-3x"></i>
+                <h6>
+                    Responsivo
+                </h6>
+                <p>Mobile</p>
+            </div><!--Responsie-->
+    </div> <!--icons-->
+    <div class="botao-icons">
+        <a href="#" class="botao-saiba-mais">
+            Saiba Mais
+        </a>
+    </div>
+    </div>
+</section>
+<section id="contato">
+    <h4>
+        Fale Conosco
+    </h4>
+    <form action="#">
+        <div class="dados-form">
+            <div class="nome">
+                <label for="nome">
+                    Nome
+                </label>
+                <input type="text" name="nome" id="nome"
+                placeholder="Digite Seu Nome">
+            </div><!--nome-->
+            <div class="email">
+                <label for="email">
+                    Email
+                </label>
+                <input type="email" name="email" id="email"
+                placeholder="Digite Seu E-mail">
+            </div><!--email-->
+        </div><!--dados form-->
+        <div class="mensagem">
+            <label for="mensagem">
+                Mensagem
+            </label>
+            <textarea name="Mensagem" id="Mensagem"
+             cols="30" rows="10"></textarea>
+        </div><!--mensagem-->
+        <div class="botao-formulario">
+            <a href="#" class="botao-saiba-mais">
+                Enviar Mensagem
+            </a>
+        </div>
+    </form>
+</section>
+<footer>
+    
+    &copy; Davyson Leonardo - 2022
+</footer>
+
+</body>
+</html>
